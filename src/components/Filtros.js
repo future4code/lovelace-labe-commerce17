@@ -3,12 +3,19 @@ import styled from "styled-components";
 import Styled from "styled-components"
 
 const EstiloFiltros = styled.div `
-    border: 2px solid black;
-    padding: 20px 25px 30px 40px;
-    width: 50vw;
-    height: 80vh;
 
+display: grid;
+border: 1px solid black;
+height: 450px;
+width: 250px;
+padding: 8px;
+grid-auto-rows: 40px;
+margin: 20px;
+background-color: coral;
 `
+    
+    
+
 
 
 
@@ -36,7 +43,7 @@ class Filtros extends React.Component{
     render(){
       return(
   
-          <div className = "EstiloFiltros">
+          <EstiloFiltros>
 
               <h3>Filtros:</h3>
 
@@ -49,7 +56,7 @@ class Filtros extends React.Component{
               <h3> Busca por nome: </h3>
               <input type="text" onChange={this.mudaValueBusca} value={this.state.InputValueBusca} />
 
-          </div>
+          </EstiloFiltros>
      
     
       );

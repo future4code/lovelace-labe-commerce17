@@ -7,6 +7,18 @@ import ItemDoCarrinho from "./components/ItemDoCarrinho"
 import Produtos from "./components/Produtos"
 import './App.css';
 
+const Container = Styled.div`
+display:grid;
+grid-template-columns: 1fr 2fr 1fr;
+
+
+`
+
+const ContainerProdutos = Styled.div`
+margin-left:130px
+
+`
+
 const produtos = [
   {
     id:1,
@@ -36,19 +48,19 @@ const produtos = [
 ];
 
 
+
 class App extends React.Component{
 
 
   render(){
     return(
       
-<div>
+<Container>
 
 
 < Filtros />
-
-
-      
+  
+<ContainerProdutos>
 < Produtos />
 
  <CardDoProduto
@@ -75,11 +87,13 @@ class App extends React.Component{
          preco ={150}
          imagem = {'https://picsum.photos/50/52'} 
         />
-   
+        </ContainerProdutos>
+        <Carrinho/>
+        
 
 
 
-</div>
+</Container>
 
 
 
