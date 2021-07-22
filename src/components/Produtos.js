@@ -1,5 +1,6 @@
 import React from 'react';
 import CardDoProduto from './CardDoProduto';
+import styled from "styled-components";
 
 class Produtos extends React.Component {
     

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components";
 import Styled from "styled-components"
 
-const Filtros = styled.div `
+const EstiloFiltros = styled.div `
     border: 2px solid black;
     padding: 20px 25px 30px 40px;
     width: 50vw;
@@ -36,7 +36,7 @@ class Filtros extends React.Component{
     render(){
       return(
   
-          <div Filtros>
+          <div className = "EstiloFiltros">
 
               <h3>Filtros:</h3>
 
