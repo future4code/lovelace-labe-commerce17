@@ -1,3 +1,4 @@
+
 import React from 'react'
 import styled from 'styled-components';
 
@@ -15,5 +16,7 @@ margin: 20px
 
 
 
-
 export default Carrinho
+
+import styled from "styled-components";
+
