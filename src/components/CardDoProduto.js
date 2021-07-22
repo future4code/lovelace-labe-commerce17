@@ -4,15 +4,21 @@ import Produtos from './Produtos';
 import App from '../App';
 
 const CardProduto = styled.div`
+  
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
   background-color: coral;
   padding: 20px;
   border: 1px solid black;
-
+  
 
 `
 const Photo = styled.img`
-width: 10%;
-height: 10%;
+width: 50%;
+height: 50%;
 `
 class CardDoProduto extends React.Component {
     
