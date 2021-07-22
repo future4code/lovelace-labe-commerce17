@@ -47,6 +47,7 @@ class App extends React.Component{
 
 
 <h1>OL´´AAAAÁ</h1>
+{CardDoProduto}
 
 
 </div>
