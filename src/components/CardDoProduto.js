@@ -1,45 +1,30 @@
 import React from 'react';
+import styled from "styled-components";
 import Produtos from './Produtos';
 import App from '../App';
 
+const CardProduto = styled.div`
+  background-color: coral;
+  padding: 20px;
+  border: 1px solid black;
+
+
+`
+const Photo = styled.img`
+width: 10%;
+height: 10%;
+`
 class CardDoProduto extends React.Component {
     
-    state = {
-        produtos: [{
-            id:1,
-            nome:"Produto 1",
-            preco:100,
-            imagem: "URL IMAGEM",
-        
-          },
-          {
-            id:2,
-            nome:"Produto 2",
-            preco:200,
-            imagem: "URL IMAGEM2",
-          },
-          {
-            id:3,
-            nome:"Produto 3",
-            preco:300,
-            imagem: "URL IMAGEM3",
-          },
-          {
-            id:4,
-            nome:"Produto 4",
-            preco:400,
-            imagem: "URL IMAGEM4",
-          }]
-      };
-
+    
     render() {
       return (
-        <div>
-          <img>{this.state.produtos.imagem}</img>
-          <h3>{this.state.produtos.nome}</h3>
-          <span>{this.state.produtos.preco}</span>
+        <CardProduto>
+          <Photo src={this.props.imagem} alt={'Imagem do usuario'}/>
+         <h2> {this.props.nome} </h2>
+         <h4> R${this.props.preco},00 </h4>
           <button onClick="">Adicionar ao carrinho</button>          
-        </div>
+        </CardProduto>
       );
     }
   }
