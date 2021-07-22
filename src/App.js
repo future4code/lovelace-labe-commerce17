@@ -44,6 +44,7 @@ class App extends React.Component{
       
 <div>
 
+
 < Filtros />
 
 
@@ -75,6 +76,7 @@ class App extends React.Component{
          imagem = {'https://picsum.photos/50/52'} 
         />
    
+
 
 
 </div>
