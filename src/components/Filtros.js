@@ -1,10 +1,8 @@
 import React from "react"
 import styled from "styled-components";
-import Styled from "styled-components"
+
 
 const EstiloFiltros = styled.div `
-
-display: grid;
 border: 1px solid black;
 height: 450px;
 width: 250px;
@@ -14,7 +12,12 @@ margin: 20px;
 background-color: coral;
 `
     
-    
+const EstiloInput = styled.label`
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-bottom: 8px;
+`   
 
 
 
@@ -46,16 +49,18 @@ class Filtros extends React.Component{
           <EstiloFiltros>
 
               <h3>Filtros:</h3>
-
+              <EstiloInput>
               <h3> Valor mínimo: </h3>
               <input type="number" onChange={this.mudaValueMinimo} value={this.state.InputValueMinimo} />
-
+              </EstiloInput>
+              <EstiloInput>
               <h3> Valor máximo: </h3>
               <input type="number" onChange={this.mudaValueMaximo} value={this.state.InputValueMaximo} />
-
+              </EstiloInput>
+              <EstiloInput>
               <h3> Busca por nome: </h3>
               <input type="text" onChange={this.mudaValueBusca} value={this.state.InputValueBusca} />
-
+              </EstiloInput>
           </EstiloFiltros>
      
     
