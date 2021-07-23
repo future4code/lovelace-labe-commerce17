@@ -10,53 +10,16 @@ import './App.css';
 const Container = Styled.div`
 display:grid;
 grid-template-columns: 1fr 2fr 1fr;
-
-
 `
-
 const ContainerProdutos = Styled.div`
 margin-left:130px
-
 `
-
-const produtos = [
-  {
-    id:1,
-    nome:"Produto 1",
-    preco:100,
-    imagem: "https://picsum.photos/200/151",
-
-  },
-  {
-    id:2,
-    nome:"Produto 2",
-    preco:200,
-    imagem: "URL IMAGEM2",
-  },
-  {
-    id:3,
-    nome:"Produto 3",
-    preco:300,
-    imagem: "URL IMAGEM3",
-  },
-  {
-    id:4,
-    nome:"Produto 4",
-    preco:400,
-    imagem: "URL IMAGEM4",
-  }
-];
-
-
-
 class App extends React.Component{
-
 
   render(){
     return(
       
 <Container>
-
 
 < Filtros />
   
@@ -89,20 +52,10 @@ class App extends React.Component{
         />
         </ContainerProdutos>
         <Carrinho/>
-        
-
-
-
 </Container>
-
-
-
-
     );
   }
 }
-
-
 
 export default App;
 

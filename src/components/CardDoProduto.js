@@ -13,8 +13,6 @@ const CardProduto = styled.div`
   background-color: coral;
   padding: 20px;
   border: 1px solid black;
-  
-
 `
 const Photo = styled.img`
 width: 50%;
